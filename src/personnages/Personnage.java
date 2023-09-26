@@ -101,11 +101,7 @@ public String getNom(){
                 personnageCible.setPointsDeVie(0);
              
             }
-                System.out.println(nom + "attaque avec une puissance de : = " + forceDeFrappe );
-                System.out.println(personnageCible.getNom() + "a une defense de  :  " + personnageCible.getValeurDefense());
-                System.out.println(nom + "Les dommages sont donc de :" + degats );
-              
-               
+             
   }
 
     public void setNewInitiativeRandom() {
