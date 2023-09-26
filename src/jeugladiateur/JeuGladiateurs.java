@@ -30,17 +30,6 @@ public class JeuGladiateurs {
     affichage.afficherDebutCombat();
         System.out.println("\n");
        
-        System.out.println("Attaque personnage 1 = "+ Bob.attaqueCalcul());
-        System.out.println("Attaque personnage 1 = "+ Bob.attaqueCalcul());
-        System.out.println("Attaque personnage 1 = "+ Bob.attaqueCalcul());
-        System.out.println("Attaque personnage 1 = "+ Bob.attaqueCalcul());
-        System.out.println("Attaque personnage 1 = "+ Bob.attaqueCalcul());
-        System.out.println("\n");
-        System.out.println("Attaque personnage 2 = "+ Igor.attaqueCalcul());
-        System.out.println("Attaque personnage 2 = "+ Igor.attaqueCalcul());
-        System.out.println("Attaque personnage 2 = "+ Igor.attaqueCalcul());
-        System.out.println("Attaque personnage 2 = "+ Igor.attaqueCalcul());
-        System.out.println("Attaque personnage 2 = "+ Igor.attaqueCalcul());
     
     // TODO : La boucle contenant les étapes du combat
     // TODO : Après la boucle, afficher le résultat du combat

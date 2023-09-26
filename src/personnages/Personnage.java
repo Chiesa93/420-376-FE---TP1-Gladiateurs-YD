@@ -7,7 +7,7 @@ public class Personnage {
     private int valeurMaxAttaque;
     private int valeurDefense;
     private int initiative;
-    private int Attaque;
+    private int attaque;
     
     public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
         this.nom = nom;
@@ -79,16 +79,18 @@ public String getNom(){
     }
     }
 
-    public int attaqueCalcul() {
-        Attaque = (int) (Math.random()*valeurMaxAttaque);
+    private int attaqueCalcul() {
+        attaque = (int) (Math.random()*valeurMaxAttaque);
         
         
-        return Attaque;
+        return attaque;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
         // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
+        
         //modifier les points de vie du personnage cible, afficher les détails
+        
         // sur l'attaque, tel que montré dans l'énoncé.
     }
 
