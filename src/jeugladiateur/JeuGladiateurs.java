@@ -30,13 +30,7 @@ public class JeuGladiateurs {
     affichage.afficherDebutCombat();
         System.out.println("\n");
        
-    Bob.frapperPersonnage(Igor);
-    System.out.println("\n");
-    Bob.frapperPersonnage(Igor);
-    System.out.println("\n");
-    Igor.frapperPersonnage(Bob);
-    System.out.println("\n");
-    Igor.frapperPersonnage(Bob);
+   
     // TODO : La boucle contenant les étapes du combat
     // TODO : Après la boucle, afficher le résultat du combat
     // </editor-fold
