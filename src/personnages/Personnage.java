@@ -74,7 +74,7 @@ public String getNom(){
         if (pointsDeVie <= 0) {
         System.out.println("Statut : Mort");
     } else {
-        System.out.println("Statut : En vie");
+        System.out.println("Statut : Vivant");
     }
     }
 
