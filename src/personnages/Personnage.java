@@ -24,10 +24,46 @@ public class Personnage {
         this.valeurDefense = 0;
         this.initiative = 0;
     }
-    
-    public String getNom(){
+public String getNom(){
         return nom;
     }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public int getPointsDeVie() {
+        return pointsDeVie;
+    }
+
+    public void setPointsDeVie(int pointsDeVie) {
+        this.pointsDeVie = pointsDeVie;
+    }
+     
+    public int getValeurMaxAttaque() {
+        return valeurMaxAttaque;
+    }
+
+    public void setValeurMaxAttaque(int valeurMaxAttaque) {
+        this.valeurMaxAttaque = valeurMaxAttaque;
+    }
+
+    public int getValeurDefense() {
+        return valeurDefense;
+    }
+
+    public void setValeurDefense(int valeurDefense) {
+        this.valeurDefense = valeurDefense;
+    }
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    public void setInitiative(int initiative) {
+        this.initiative = initiative;
+    }    
+    
     
     
     public void afficherInfosPersonnage() {
