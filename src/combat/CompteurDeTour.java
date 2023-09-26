@@ -24,7 +24,7 @@ public class CompteurDeTour {
 
   
     public void augmenteTour() {
-       cptrTour += 1;
+       cptrTour++;
     }
 
     public void afficheTour() {
