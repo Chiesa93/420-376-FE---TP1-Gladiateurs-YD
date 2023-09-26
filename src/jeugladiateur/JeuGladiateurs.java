@@ -24,16 +24,13 @@ public class JeuGladiateurs {
     Bob.afficherInfosPersonnage();
         System.out.println("\n");
     Igor.afficherInfosPersonnage();
-    // TODO : Afficher le message du début du combat
         System.out.println("\n");
-        affichage.afficherDebutCombat();
+    // TODO : Afficher le message du début du combat
+        
+    affichage.afficherDebutCombat();
+        System.out.println("\n");
+       
     
-    // </editor-fold
-
-    // **************************************************************************
-    // **************************************************************************
-    // **************************************************************************
-    // <editor-fold defaultstate="collapsed" desc="Mécanique de combat">
     // TODO : La boucle contenant les étapes du combat
     // TODO : Après la boucle, afficher le résultat du combat
     // </editor-fold
