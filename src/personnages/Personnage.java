@@ -65,9 +65,17 @@ public String getNom(){
     }    
     
     
-    
     public void afficherInfosPersonnage() {
-        // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
+        System.out.println("Nom : " + nom);
+        System.out.println("Attaque : " + valeurMaxAttaque);
+        System.out.println("Defense : " + valeurDefense);
+        System.out.println("Points de vie : " + pointsDeVie);
+        System.out.println("Initiative : " + initiative);
+        if (pointsDeVie <= 0) {
+        System.out.println("Statut : Mort");
+    } else {
+        System.out.println("Statut : En vie");
+    }
     }
 
     private int attaqueCalcul() {
