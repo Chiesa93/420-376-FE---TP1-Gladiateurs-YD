@@ -25,6 +25,11 @@ public class Personnage {
         this.initiative = 0;
     }
     
+    public String getNom(){
+        return nom;
+    }
+    
+    
     public void afficherInfosPersonnage() {
         // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
     }
