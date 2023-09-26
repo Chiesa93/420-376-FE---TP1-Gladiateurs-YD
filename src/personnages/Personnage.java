@@ -7,6 +7,7 @@ public class Personnage {
     private int valeurMaxAttaque;
     private int valeurDefense;
     private int initiative;
+    private int Attaque;
     
     public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
         this.nom = nom;
@@ -78,10 +79,11 @@ public String getNom(){
     }
     }
 
-    private int attaqueCalcul() {
-        // TODO : Retourner la valeur de l'attaque du personnage.
-        // Cette valeur est trouvée aléatoirement et doit se situer entre ZÉRO et valeurMaxAttaque.
-        return 0;
+    public int attaqueCalcul() {
+        Attaque = (int) (Math.random()*valeurMaxAttaque);
+        
+        
+        return Attaque;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
