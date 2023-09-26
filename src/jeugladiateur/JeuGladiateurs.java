@@ -30,7 +30,14 @@ public class JeuGladiateurs {
     affichage.afficherDebutCombat();
         System.out.println("\n");
        
-   
+        Bob.afficherInfosPersonnage();
+        Bob.setNewInitiativeRandom();
+        Bob.afficherInfosPersonnage();
+        
+        
+        Igor.afficherInfosPersonnage();
+        Igor.setNewInitiativeRandom();
+        Igor.afficherInfosPersonnage();
     // TODO : La boucle contenant les étapes du combat
     // TODO : Après la boucle, afficher le résultat du combat
     // </editor-fold

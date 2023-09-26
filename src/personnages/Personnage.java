@@ -80,7 +80,7 @@ public String getNom(){
     }
 
     private int attaqueCalcul() {
-        int random = (int) (Math.random()*valeurMaxAttaque);
+        int random = (int) (Math.random()*valeurMaxAttaque + 1);
         
         return random;
     }
@@ -105,8 +105,13 @@ public String getNom(){
   }
 
     public void setNewInitiativeRandom() {
-        // TODO : Modifier de façon aléatoire la valeur INI du personnage.
+   
+        int newIni = (int) (Math.random()*101);
+        setInitiative(newIni);
+        
+       
+        
     }
-    // </editor-fold
+    
 }
 
