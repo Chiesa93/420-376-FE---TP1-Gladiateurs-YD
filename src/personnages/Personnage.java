@@ -7,7 +7,7 @@ public class Personnage {
     private int valeurMaxAttaque;
     private int valeurDefense;
     private int initiative;
-    private int attaque;
+   
     
     public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
         this.nom = nom;
@@ -80,19 +80,33 @@ public String getNom(){
     }
 
     private int attaqueCalcul() {
-        attaque = (int) (Math.random()*valeurMaxAttaque);
+        int random = (int) (Math.random()*valeurMaxAttaque);
         
-        
-        return attaque;
+        return random;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
-        // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
+       
+        int forceDeFrappe = attaqueCalcul();
+        int degats = forceDeFrappe - personnageCible.getValeurDefense();
         
-        //modifier les points de vie du personnage cible, afficher les détails
-        
-        // sur l'attaque, tel que montré dans l'énoncé.
-    }
+        if(degats < 0){
+            degats = 0;   
+         }
+    
+         personnageCible.setPointsDeVie(personnageCible.getPointsDeVie() - degats);
+
+            if(personnageCible.getPointsDeVie() < 0){
+             
+                personnageCible.setPointsDeVie(0);
+             
+            }
+                System.out.println(nom + "attaque avec une puissance de : = " + forceDeFrappe );
+                System.out.println(personnageCible.getNom() + "a une defense de  :  " + personnageCible.getValeurDefense());
+                System.out.println(nom + "Les dommages sont donc de :" + degats );
+              
+               
+  }
 
     public void setNewInitiativeRandom() {
         // TODO : Modifier de façon aléatoire la valeur INI du personnage.
