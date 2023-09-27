@@ -13,23 +13,23 @@ public class JeuGladiateurs {
 
     CompteurDeTour tour = new CompteurDeTour();
     AffichageEcran affichage = new AffichageEcran();
-    Personnage Bob = new Retiaire("Bob le malchanceux",15,15,70,15);
-    Personnage Igor = new Mirmillon("Igor l'empaleur",25,5,100,30);
+    Personnage Bob = new Mirmillon("Bob le malchanceux",15,15,70,15);
+    Personnage Igor = new Retiaire("Igor l'empaleur",25,5,100,30);
    
 
     
-    // TODO : Afficher les infos de chaque personnage
+    
     Bob.afficherInfosPersonnage();
         System.out.println("\n");
     Igor.afficherInfosPersonnage();
         System.out.println("\n");
-    // TODO : Afficher le message du début du combat
+   
         
     affichage.afficherDebutCombat();
         System.out.println("\n");
        
     
-    // TODO : La boucle contenant les étapes du combat
+    
     while(Igor.getPointsDeVie() > 0 && Bob.getPointsDeVie()>0){
         
         tour.afficheTour();
