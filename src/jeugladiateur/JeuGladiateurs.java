@@ -5,6 +5,7 @@ import personnages.Personnage;
 import combat.CompteurDeTour;
 import combat.AffichageEcran;
 import personnages.Mirmillon;
+import personnages.Retiaire;
 
 public class JeuGladiateurs {
 
@@ -12,7 +13,7 @@ public class JeuGladiateurs {
 
     CompteurDeTour tour = new CompteurDeTour();
     AffichageEcran affichage = new AffichageEcran();
-    Personnage Bob = new Personnage("Bob le malchanceux",15,15,70,15);
+    Personnage Bob = new Retiaire("Bob le malchanceux",15,15,70,15);
     Personnage Igor = new Mirmillon("Igor l'empaleur",25,5,100,30);
    
 
